@@ -11,6 +11,9 @@ def load_data(csv):
 
 stops = load_data("data/Officer_Traffic_Stops.csv")
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
+
 # box plot
 
 plt.figure(figsize=(8, 8))
@@ -24,4 +27,4 @@ plt.title('Box Plot of Driver Age by Search Conducted')
 
 
 # plot
-st.pyplot
+st.pyplot()
